@@ -1,0 +1,20 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    configure)
+	ldconfig
+	touch /var/log/liblogicalaccess.log
+	chmod 0666 /var/log/liblogicalaccess.log
+	;;
+    abort-upgrade|abort-remove|abort-deconfigure)
+	rm -f /var/log/liblogicalaccess.log
+	;;
+esac
+
+
+
+exit 0
+
+#DEBHELPER#

@@ -1,0 +1,4 @@
+usr/lib
+usr/lib/logicalaccess
+usr/share/doc/liblogicalaccess
+etc/ld.so.conf.d

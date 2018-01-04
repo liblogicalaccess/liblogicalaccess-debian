@@ -1,0 +1,5 @@
+usr/lib/lib* usr/lib/logicalaccess
+usr/lib/liblogicalaccess.so* usr/lib
+usr/share/*
+etc/ld.so.conf.d/*
+etc/*

@@ -1,0 +1,42 @@
+Source: liblogicalaccess
+Priority: extra
+Maintainer: ISLOG <support@islog.com>
+Build-Depends: debhelper (>= 8.0.0), dpkg-dev (>= 1.16.1)
+Standards-Version: 3.9.3
+Section: libs
+Homepage: http://liblogicalaccess.islog.com
+
+Package: liblogicalaccess-dbg
+Section: debug
+Architecture: any
+Priority: extra
+Depends: ${misc:Depends}, liblogicalaccess (= ${binary:Version}), debhelper (>= 7)
+Description: Library to handle RFID chips and readers - Symbols (debug)
+ LibLogicalAccess library provides low level commands access
+ and high level generic abstraction for several chip and reader.
+ (PC/SC readers, STid readers …) of the market on 125Khz (EM4102, HID Prox …),
+ 13.56Mhz ISO14443/ISO15693 (Mifare Classic, DESFire, ..)
+ and 433Mhz frequencies.
+
+Package: liblogicalaccess-dev
+Section: libdevel
+Architecture: any
+Depends: ${misc:Depends}, libpcsclite-dev, libssl-dev, libboost-dev, libboost-system-dev, libboost-filesystem-dev, libboost-date-time-dev, libboost-chrono-dev, libboost-thread-dev, libboost-regex-dev, libpcsclite-dev, libssl-dev, liblogicalaccess (= ${binary:Version})
+Description: Library to handle RFID chips and readers - Headers (dev)
+ LibLogicalAccess library provides low level commands access
+ and high level generic abstraction for several chip and reader.
+ (PC/SC readers, STid readers …) of the market on 125Khz (EM4102, HID Prox …),
+ 13.56Mhz ISO14443/ISO15693 (Mifare Classic, DESFire, ..)
+ and 433Mhz frequencies.
+
+Package: liblogicalaccess
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libpcsclite1, libboost-system-dev, libboost-filesystem-dev, libboost-date-time-dev, libboost-chrono-dev, libboost-thread-dev, openssl, pcscd
+Description: Library to handle RFID chips and readers
+ LibLogicalAccess library provides low level commands access
+ and high level generic abstraction for several chip and reader.
+ (PC/SC readers, STid readers …) of the market on 125Khz (EM4102, HID Prox …),
+ 13.56Mhz ISO14443/ISO15693 (Mifare Classic, DESFire, ..)
+ and 433Mhz frequencies.
+
